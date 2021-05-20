@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AzmoonTracker.Repository
+namespace AzmoonTracker.Services
 {
     public class Class1
     {

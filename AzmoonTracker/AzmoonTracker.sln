@@ -5,13 +5,13 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzmoonTracker", "AzmoonTracker.csproj", "{79FCACA4-CFA3-4E7E-AA20-8588F2F223D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzmoonTracker.Models", "..\AzmoonTracker.Models\AzmoonTracker.Models.csproj", "{5E4E69F1-A400-44DE-954F-4EBB96E22310}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzmoonTracker.Models", "..\AzmoonTracker.Models\AzmoonTracker.Models.csproj", "{5E4E69F1-A400-44DE-954F-4EBB96E22310}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzmoonTracker.Infrastructure", "..\AzmoonTracker.Infrastacture\AzmoonTracker.Infrastructure.csproj", "{EF09CB36-6969-4E0C-AB30-9D776F42082C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzmoonTracker.Infrastructure", "..\AzmoonTracker.Infrastacture\AzmoonTracker.Infrastructure.csproj", "{EF09CB36-6969-4E0C-AB30-9D776F42082C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzmoonTracker.Repository", "..\AzmoonTracker.Repository\AzmoonTracker.Repository.csproj", "{DB73D29D-9993-4E54-898B-7419007EEECD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzmoonTracker.ViewModels", "..\AzmoonTracker.ViewModel\AzmoonTracker.ViewModels.csproj", "{0B940176-DC4F-47C1-948C-BC314E488A7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzmoonTracker.ViewModels", "..\AzmoonTracker.ViewModel\AzmoonTracker.ViewModels.csproj", "{0B940176-DC4F-47C1-948C-BC314E488A7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzmoonTracker.Services", "..\AzmoonTracker.Services\AzmoonTracker.Services.csproj", "{B7B4E0C0-567F-40DC-B1E2-95F58665C9BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,14 +31,14 @@ Global
 		{EF09CB36-6969-4E0C-AB30-9D776F42082C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF09CB36-6969-4E0C-AB30-9D776F42082C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF09CB36-6969-4E0C-AB30-9D776F42082C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DB73D29D-9993-4E54-898B-7419007EEECD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DB73D29D-9993-4E54-898B-7419007EEECD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DB73D29D-9993-4E54-898B-7419007EEECD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DB73D29D-9993-4E54-898B-7419007EEECD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0B940176-DC4F-47C1-948C-BC314E488A7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0B940176-DC4F-47C1-948C-BC314E488A7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B940176-DC4F-47C1-948C-BC314E488A7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B940176-DC4F-47C1-948C-BC314E488A7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7B4E0C0-567F-40DC-B1E2-95F58665C9BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7B4E0C0-567F-40DC-B1E2-95F58665C9BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7B4E0C0-567F-40DC-B1E2-95F58665C9BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7B4E0C0-567F-40DC-B1E2-95F58665C9BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

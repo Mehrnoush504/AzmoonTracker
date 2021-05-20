@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Behdad2\\Projects\\ASP CORE\\Azmoon Tracker\\AzmoonTracker.Repository\\AzmoonTracker.Repository.csproj",
-      "projectName": "AzmoonTracker.Repository",
-      "projectPath": "F:\\Behdad2\\Projects\\ASP CORE\\Azmoon Tracker\\AzmoonTracker.Repository\\AzmoonTracker.Repository.csproj",
+      "projectUniqueName": "F:\\Behdad2\\Projects\\ASP CORE\\Azmoon Tracker\\AzmoonTracker.Services\\AzmoonTracker.Services.csproj",
+      "projectName": "AzmoonTracker.Services",
+      "projectPath": "F:\\Behdad2\\Projects\\ASP CORE\\Azmoon Tracker\\AzmoonTracker.Services\\AzmoonTracker.Services.csproj",
       "packagesPath": "F:\\visual studio\\nuget cache",
-      "outputPath": "F:\\Behdad2\\Projects\\ASP CORE\\Azmoon Tracker\\AzmoonTracker.Repository\\obj\\",
+      "outputPath": "F:\\Behdad2\\Projects\\ASP CORE\\Azmoon Tracker\\AzmoonTracker.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
