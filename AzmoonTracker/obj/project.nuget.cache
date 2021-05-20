@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "zyBpQDDZmyUoN+QwG/L0hlplaEtVzlX/pq31bHUhge5ZBKL3a72pAlANb8VqruX1ofdd6+zChtF4bTTQppuopw==",
+  "success": true,
+  "projectFilePath": "F:\\Behdad2\\Projects\\ASP CORE\\Azmoon Tracker\\AzmoonTracker\\AzmoonTracker.csproj",
+  "expectedPackageFiles": [
+    "F:\\visual studio\\nuget cache\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "F:\\visual studio\\nuget cache\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "F:\\visual studio\\nuget cache\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "F:\\visual studio\\nuget cache\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "F:\\visual studio\\nuget cache\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "F:\\visual studio\\nuget cache\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}

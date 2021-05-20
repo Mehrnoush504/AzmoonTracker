@@ -1,0 +1,14 @@
+.main_exam{
+    padding: 30px 20px 20px 20px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: inset 0px 0px 50px 1px rgb(197, 236, 223);
+}
+
+.exam_question
+{
+    background-color: rgba(187, 236, 185, 0.8);
+    padding: 20px 3% 20px 3%;
+}
+
+/*TODO: better put in Site.css*/

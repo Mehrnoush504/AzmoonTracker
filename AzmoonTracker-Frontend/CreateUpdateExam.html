@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Site.css" rel="stylesheet">
+    <link href="Exam.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active left" href="#home">Home</a>
+        <a href="#my_exams" class="left">my exams</a>
+        <a href="#login" class="left">login</a>
+        <a href="#contact" class="right">Contact us</a>
+        <a href="#about" class="right">About</a>
+    </div>
+    <div id="main" class="container main_exam">
+        <form>
+            <div>
+                <label>exam title:</label>
+                <input type="text" placeholder="enter exam title">
+            </div>
+            <br>
+
+            <div>
+                <label>date:</label>
+                <input type="date" >
+            </div>
+            <br>
+
+            <div>
+                <label>time:</label>
+                <input type="time">
+            </div>
+            <br>
+
+            <div>
+                <label>class name:</label>
+                <input type="text" placeholder="eg: school year 9 physics,UCLA mechanical engineering,...">
+            </div>
+            <br>
+
+            <div>
+                <label>exam image:</label>
+                <input type="file">
+            </div>
+            <br>
+
+            <button>submit</button>
+        </form>
+        <br>
+
+        <form class="exam_question">
+            <div>
+                <label>exam type:</label>
+                <select>
+                    <option>Descriptive</option>
+                    <option>Multi-choice</option>
+                    <option>File upload</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>enter question:</label>
+                <input type="text" placeholder="">
+            </div>
+        </form>
+    </div>
+
+    <div class="ad"></div>
+    <footer> <hr/> © Behdad Alagha </footer>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.main_cheatCam{
+    display: grid;
+    gap: 0.2em;
+    grid-template-columns: repeat(auto-fit,minmax(104px,1fr));
+    overflow: hidden;
+}
+
+.Student_camera
+{
+    border-style: solid;
+    background-color: rgb(169, 240, 240);
+    width: 100px;
+    height: 120px;
+}
+
+.Student_camera .Cam_image{
+    height:100px;
+    width: 100%;
+}
+
+.Student_camera .Student_name{
+    text-align: center;
+}
