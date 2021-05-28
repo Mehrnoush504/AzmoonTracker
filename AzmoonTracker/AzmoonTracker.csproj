@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AzmoonTracker.Infrastacture\AzmoonTracker.Infrastructure.csproj" />
+    <ProjectReference Include="..\AzmoonTracker.Infrastructure\AzmoonTracker.Infrastructure.csproj" />
     <ProjectReference Include="..\AzmoonTracker.Services\AzmoonTracker.Services.csproj" />
   </ItemGroup>
 

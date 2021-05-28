@@ -1,0 +1,48 @@
+﻿{
+  "examId": "aaa",
+  "examName": "aaauuu",
+  "className": "aaaxxx",
+  "isPublic": true,
+  "isFinished": false,
+  "questionNum": 2,
+  "startTime": "2021-05-28T15:24:01.431Z",
+  "endTime": "2021-05-28T15:54:01.431Z",
+  "questions": [
+    {
+      "questionTypeId": 2,
+      "questionNum": 1,
+      "questionDescription": "aaa1eee",
+      "choices": [
+       {
+           "choiceNum": 1,
+           "choiceDescription": "Insanity",
+           "isCorrect": true
+       }
+      ]
+    },
+    {
+      "questionTypeId": 1,
+      "questionNum": 2,
+      "questionDescription": "1111111added",
+      "choices": [
+      ]
+    },
+    {
+      "questionTypeId": 2,
+      "questionNum": 3,
+      "questionDescription": "aaa2eee",
+      "choices": [
+       {
+           "choiceNum": 1,
+           "choiceDescription": "aaaChoice1rrr",
+           "isCorrect": false
+       },
+       {
+           "choiceNum": 2,
+           "choiceDescription": "aaaChoice2rrr",
+           "isCorrect": false
+       }
+      ]
+    }
+  ]
+}

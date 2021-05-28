@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AzmoonTracker.Infrastructure\AzmoonTracker.Infrastructure.csproj" />
+    <ProjectReference Include="..\AzmoonTracker.ViewModel\AzmoonTracker.ViewModels.csproj" />
+  </ItemGroup>
+
 </Project>

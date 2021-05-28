@@ -1,5 +1,6 @@
 using AzmoonTracker.Infrastacture;
 using AzmoonTracker.Models;
+using AzmoonTracker.Services.ExamRepository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -37,6 +38,9 @@ namespace AzmoonTracker
 
             services.AddIdentityCore<AppUser>()
                 .AddEntityFrameworkStores<AppDbContext>();
+
+            services.AddScoped<IExamRepository, ExamRepository>();
+            //add more of the above
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

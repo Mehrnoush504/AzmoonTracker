@@ -1,4 +1,0 @@
-F:\Behdad2\Projects\ASP CORE\Azmoon Tracker\AzmoonTracker.Infrastacture\bin\Debug\netcoreapp3.1\AzmoonTracker.Models.dll
-F:\Behdad2\Projects\ASP CORE\Azmoon Tracker\AzmoonTracker.Infrastacture\obj\Debug\netcoreapp3.1\AzmoonTracker.Infrastructure.csprojAssemblyReference.cache
-F:\Behdad2\Projects\ASP CORE\Azmoon Tracker\AzmoonTracker.Infrastacture\obj\Debug\netcoreapp3.1\AzmoonTracker.Infrastructure.AssemblyInfoInputs.cache
-F:\Behdad2\Projects\ASP CORE\Azmoon Tracker\AzmoonTracker.Infrastacture\obj\Debug\netcoreapp3.1\AzmoonTracker.Infrastructure.AssemblyInfo.cs

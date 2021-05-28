@@ -9,5 +9,8 @@ namespace AzmoonTracker.Models
     {
         public int ExamsCreatedNum { get; set; }
         public int ExamsLeftNum { get; set; }
+
+        public virtual ICollection<Exam> Exams { get; set; }
+        //public virtual ICollection<UserParticipateInExam> Exam_Participated { get; set; }
     }
 }

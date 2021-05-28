@@ -1,0 +1,9 @@
+F:\Behdad2\Projects\ASP CORE\Azmoon Tracker\AzmoonTracker.ViewModel\bin\Debug\netcoreapp3.1\AzmoonTracker.ViewModels.deps.json
+F:\Behdad2\Projects\ASP CORE\Azmoon Tracker\AzmoonTracker.ViewModel\bin\Debug\netcoreapp3.1\AzmoonTracker.ViewModels.dll
+F:\Behdad2\Projects\ASP CORE\Azmoon Tracker\AzmoonTracker.ViewModel\bin\Debug\netcoreapp3.1\AzmoonTracker.ViewModels.pdb
+F:\Behdad2\Projects\ASP CORE\Azmoon Tracker\AzmoonTracker.ViewModel\obj\Debug\netcoreapp3.1\AzmoonTracker.ViewModels.csprojAssemblyReference.cache
+F:\Behdad2\Projects\ASP CORE\Azmoon Tracker\AzmoonTracker.ViewModel\obj\Debug\netcoreapp3.1\AzmoonTracker.ViewModels.AssemblyInfoInputs.cache
+F:\Behdad2\Projects\ASP CORE\Azmoon Tracker\AzmoonTracker.ViewModel\obj\Debug\netcoreapp3.1\AzmoonTracker.ViewModels.AssemblyInfo.cs
+F:\Behdad2\Projects\ASP CORE\Azmoon Tracker\AzmoonTracker.ViewModel\obj\Debug\netcoreapp3.1\AzmoonTracker.ViewModels.csproj.CoreCompileInputs.cache
+F:\Behdad2\Projects\ASP CORE\Azmoon Tracker\AzmoonTracker.ViewModel\obj\Debug\netcoreapp3.1\AzmoonTracker.ViewModels.dll
+F:\Behdad2\Projects\ASP CORE\Azmoon Tracker\AzmoonTracker.ViewModel\obj\Debug\netcoreapp3.1\AzmoonTracker.ViewModels.pdb

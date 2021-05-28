@@ -1,0 +1,12 @@
+F:\Behdad2\Projects\ASP CORE\Azmoon Tracker\AzmoonTracker.Models\bin\Debug\netcoreapp3.1\AzmoonTracker.Models.deps.json
+F:\Behdad2\Projects\ASP CORE\Azmoon Tracker\AzmoonTracker.Models\bin\Debug\netcoreapp3.1\AzmoonTracker.Models.dll
+F:\Behdad2\Projects\ASP CORE\Azmoon Tracker\AzmoonTracker.Models\bin\Debug\netcoreapp3.1\AzmoonTracker.Models.pdb
+F:\Behdad2\Projects\ASP CORE\Azmoon Tracker\AzmoonTracker.Models\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+F:\Behdad2\Projects\ASP CORE\Azmoon Tracker\AzmoonTracker.Models\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.xml
+F:\Behdad2\Projects\ASP CORE\Azmoon Tracker\AzmoonTracker.Models\obj\Debug\netcoreapp3.1\AzmoonTracker.Models.csprojAssemblyReference.cache
+F:\Behdad2\Projects\ASP CORE\Azmoon Tracker\AzmoonTracker.Models\obj\Debug\netcoreapp3.1\AzmoonTracker.Models.AssemblyInfoInputs.cache
+F:\Behdad2\Projects\ASP CORE\Azmoon Tracker\AzmoonTracker.Models\obj\Debug\netcoreapp3.1\AzmoonTracker.Models.AssemblyInfo.cs
+F:\Behdad2\Projects\ASP CORE\Azmoon Tracker\AzmoonTracker.Models\obj\Debug\netcoreapp3.1\AzmoonTracker.Models.csproj.CoreCompileInputs.cache
+F:\Behdad2\Projects\ASP CORE\Azmoon Tracker\AzmoonTracker.Models\obj\Debug\netcoreapp3.1\AzmoonTracker.Models.csproj.CopyComplete
+F:\Behdad2\Projects\ASP CORE\Azmoon Tracker\AzmoonTracker.Models\obj\Debug\netcoreapp3.1\AzmoonTracker.Models.dll
+F:\Behdad2\Projects\ASP CORE\Azmoon Tracker\AzmoonTracker.Models\obj\Debug\netcoreapp3.1\AzmoonTracker.Models.pdb

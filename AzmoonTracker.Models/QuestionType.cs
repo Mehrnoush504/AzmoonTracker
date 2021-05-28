@@ -7,9 +7,10 @@ namespace AzmoonTracker.Models
 {
     public class QuestionType
     {
-        [Key]
         public int TypeId { get; set; }
 
-        public string QuestionName { get; set; }
+        [Required]
+        [MaxLength(20)]
+        public string TypeName { get; set; }
     }
 }
