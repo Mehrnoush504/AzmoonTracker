@@ -1,0 +1,16 @@
+software iterations:
+
+iteration 1:
+-Exam CRUD (for examinor)
+-View All exams [main page]
+
+iteration 2:
+-take exam (for participant)
+-view results of each participant (for examinor)
+-search for exams (for both)
+
+iteration 3:
+-Authentication & Authorization
+
+iteration 4:
+-Webcam setup & live video streamin

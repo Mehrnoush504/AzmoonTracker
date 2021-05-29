@@ -9,6 +9,49 @@
 {
     background-color: rgba(187, 236, 185, 0.8);
     padding: 20px 3% 20px 3%;
+    border-top: 1px solid white;
+    position: relative;
 }
 
-/*TODO: better put in Site.css*/
+.add_question
+{
+    background-color: rgb(154, 255, 154);
+    border: 3px solid skyblue;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 0 auto -8px 48%;
+    cursor: pointer;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.remove_question
+{
+    background-color: rgba(255, 21, 21, 0.596);
+    border: 5px solid rgba(241, 188, 13, 0.589);
+    top: 6px;
+    right: 6px;
+    position: absolute;
+    width:fit-content;
+    padding: 2px 5px 2px 5px;
+    cursor: pointer;
+    color: white;
+    border-radius: 6px;
+}
+
+.collapse_question
+{
+    background-color: greenyellow;
+    border: 5px solid skyblue;
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.65;
+    cursor: pointer;
+}
+

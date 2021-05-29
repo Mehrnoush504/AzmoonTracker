@@ -23,25 +23,21 @@
                 <input type="text" placeholder="enter exam title">
             </div>
             <br>
-
             <div>
                 <label>date:</label>
                 <input type="date" >
             </div>
             <br>
-
             <div>
                 <label>time:</label>
                 <input type="time">
             </div>
             <br>
-
             <div>
                 <label>class name:</label>
                 <input type="text" placeholder="eg: school year 9 physics,UCLA mechanical engineering,...">
             </div>
             <br>
-
             <div>
                 <label>exam image:</label>
                 <input type="file">
@@ -52,22 +48,25 @@
         </form>
         <br>
 
-        <form class="exam_question">
-            <div>
-                <label>exam type:</label>
-                <select>
-                    <option>Descriptive</option>
-                    <option>Multi-choice</option>
-                    <option>File upload</option>
-                </select>
-            </div>
-            <br>
-            <div>
-                <label>enter question:</label>
-                <input type="text" placeholder="">
-            </div>
-        </form>
-    </div>
+        <div class="add_question"> +</div>
+            <form class="exam_question">
+                <div class="collapse_question"> <1 </div>
+                <div class="remove_question">remove</div>
+                    <div>
+                        <label>question type:</label>
+                        <select>
+                            <option>Descriptive</option>
+                            <option>Multi-choice</option>
+                            <option>File upload</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label>enter question:</label>
+                        <input type="text" placeholder="">
+                    </div>
+            </form>
+        </div>
 
     <div class="ad"></div>
     <footer> <hr/> © Behdad Alagha </footer>

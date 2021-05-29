@@ -9,7 +9,7 @@ body {
     position: fixed;
     width: 100%;
     overflow: hidden;
-    background-color: rgba(183, 255, 213, 0.411);
+    background-color: rgba(183, 255, 213, 0.85);  /* rgba(183, 255, 213, 0.411) */
     top:0;
     z-index: 1;
     box-shadow: inset 0px 0px 40px 15px #31796d5d;
