@@ -25,5 +25,7 @@ namespace AzmoonTracker.Models
         public string QuestionDescription { get; set; }
 
         public virtual ICollection<Choice> Choices { get; set; }
+
+        public virtual ICollection<Answer> QuestionAnswers { get; set; }
     }
 }

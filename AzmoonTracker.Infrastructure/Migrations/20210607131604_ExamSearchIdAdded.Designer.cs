@@ -4,44 +4,22 @@ using AzmoonTracker.Infrastacture;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AzmoonTracker.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210607131604_ExamSearchIdAdded")]
+    partial class ExamSearchIdAdded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.6")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-            modelBuilder.Entity("AzmoonTracker.Models.Answer", b =>
-                {
-                    b.Property<string>("ExamId")
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
-
-                    b.Property<int>("QuestionId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ExamParticipantId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("AnswerText")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("ExamId", "QuestionId", "ExamParticipantId");
-
-                    b.HasIndex("ExamParticipantId");
-
-                    b.HasIndex("QuestionId", "ExamId");
-
-                    b.ToTable("Answers");
-                });
 
             modelBuilder.Entity("AzmoonTracker.Models.Choice", b =>
                 {
@@ -158,33 +136,6 @@ namespace AzmoonTracker.Infrastructure.Migrations
                     b.HasKey("TypeId");
 
                     b.ToTable("QuestionTypes");
-                });
-
-            modelBuilder.Entity("AzmoonTracker.Models.UserParticipateInExam", b =>
-                {
-                    b.Property<int>("ExamParticipantId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("ExamFK")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(30)");
-
-                    b.Property<int>("Grade")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ParticipantFK")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("ExamParticipantId");
-
-                    b.HasAlternateKey("ExamFK", "ParticipantFK");
-
-                    b.HasIndex("ParticipantFK");
-
-                    b.ToTable("UsersParticipateInExams");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -402,25 +353,6 @@ namespace AzmoonTracker.Infrastructure.Migrations
                     b.HasDiscriminator().HasValue("AppUser");
                 });
 
-            modelBuilder.Entity("AzmoonTracker.Models.Answer", b =>
-                {
-                    b.HasOne("AzmoonTracker.Models.UserParticipateInExam", "ExamParticipant")
-                        .WithMany("Answers")
-                        .HasForeignKey("ExamParticipantId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("AzmoonTracker.Models.Question", "Question")
-                        .WithMany("QuestionAnswers")
-                        .HasForeignKey("QuestionId", "ExamId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("ExamParticipant");
-
-                    b.Navigation("Question");
-                });
-
             modelBuilder.Entity("AzmoonTracker.Models.Choice", b =>
                 {
                     b.HasOne("AzmoonTracker.Models.Question", "Question")
@@ -458,25 +390,6 @@ namespace AzmoonTracker.Infrastructure.Migrations
                     b.Navigation("Exam");
 
                     b.Navigation("QuestionType");
-                });
-
-            modelBuilder.Entity("AzmoonTracker.Models.UserParticipateInExam", b =>
-                {
-                    b.HasOne("AzmoonTracker.Models.Exam", "Exam")
-                        .WithMany("ExamParticipants")
-                        .HasForeignKey("ExamFK")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("AzmoonTracker.Models.AppUser", "Participant")
-                        .WithMany("ExamsParticipated")
-                        .HasForeignKey("ParticipantFK")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Exam");
-
-                    b.Navigation("Participant");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -532,28 +445,17 @@ namespace AzmoonTracker.Infrastructure.Migrations
 
             modelBuilder.Entity("AzmoonTracker.Models.Exam", b =>
                 {
-                    b.Navigation("ExamParticipants");
-
                     b.Navigation("Questions");
                 });
 
             modelBuilder.Entity("AzmoonTracker.Models.Question", b =>
                 {
                     b.Navigation("Choices");
-
-                    b.Navigation("QuestionAnswers");
-                });
-
-            modelBuilder.Entity("AzmoonTracker.Models.UserParticipateInExam", b =>
-                {
-                    b.Navigation("Answers");
                 });
 
             modelBuilder.Entity("AzmoonTracker.Models.AppUser", b =>
                 {
                     b.Navigation("Exams");
-
-                    b.Navigation("ExamsParticipated");
                 });
 #pragma warning restore 612, 618
         }

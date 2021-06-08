@@ -60,8 +60,8 @@ namespace AzmoonTracker.Controllers
             return Ok();
         }
 
-        [HttpPut("/Update/{prevExamId}")]
-        public async Task<IActionResult> UpdateExamAsync(ExamViewModel examView, String prevExamId)
+        [HttpPut("/Update/{ExamId}")]
+        public async Task<IActionResult> UpdateExamAsync(ExamViewModel examView, String ExamId)
         {
             if (!ModelState.IsValid)
             {
@@ -69,7 +69,7 @@ namespace AzmoonTracker.Controllers
             }
             else
             {
-                if (!examRepository.UpdateExam(examView, prevExamId))
+                if (!examRepository.UpdateExam(examView, ExamId))
                 {
                     return BadRequest();
                 }

@@ -17,6 +17,10 @@ namespace AzmoonTracker.Models
         public String ExamId { get; set; }
 
         [Required]
+        [MaxLength(40)]
+        public String ExamSearchId { get; set; }
+
+        [Required]
         [MaxLength(70)]
         public string ExamName { get; set; }
 
@@ -40,5 +44,7 @@ namespace AzmoonTracker.Models
 
         public virtual ICollection<Question> Questions { get; set; }
         //public virtual ICollection<UserParticipateInExam> ExamParticipants { get; set; }
+
+        public virtual ICollection<UserParticipateInExam> ExamParticipants { get; set; }
     }
 }

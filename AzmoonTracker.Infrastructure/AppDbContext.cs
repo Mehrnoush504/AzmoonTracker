@@ -17,14 +17,21 @@ namespace AzmoonTracker.Infrastacture
         public DbSet<Exam> Exams { get; set; }
         public DbSet<Question> Questions { get; set; }
         public DbSet<QuestionType> QuestionTypes { get; set; }
+        public DbSet<UserParticipateInExam> UsersParticipateInExams { get; set; }
+        public DbSet<Answer> Answers { get; set; }
         //public DbSet<UserParticipateInExam> StudentExams { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            //modelBuilder.Entity<UserParticipateInExam>()
-            //    .HasKey(o => new { o.ExamFK, o.ParticipantFK });
+
+            //Primary keys
+            modelBuilder.Entity<UserParticipateInExam>()
+                .HasKey(o => o.ExamParticipantId);
+
+            modelBuilder.Entity<UserParticipateInExam>()
+                .HasAlternateKey(o => new { o.ExamFK, o.ParticipantFK });
 
             modelBuilder.Entity<QuestionType>()
                 .HasKey(o => o.TypeId);
@@ -35,8 +42,23 @@ namespace AzmoonTracker.Infrastacture
             modelBuilder.Entity<Exam>()
                 .HasKey(o => o.ExamId);
 
+            modelBuilder.Entity<Exam>()
+                .HasIndex(o => o.ExamSearchId)
+                .IsUnique();
+
             modelBuilder.Entity<Choice>()
                 .HasKey(o => new { o.ChoiceNum, o.QuestionId, o.ExamId});
+
+            //set key & alternateKey for answer
+            modelBuilder.Entity<Answer>()
+                .HasKey(o => new { o.ExamId, o.QuestionId, o.ExamParticipantId });
+
+            //foreign key relationships
+            modelBuilder.Entity<Answer>()
+                .HasOne(i => i.ExamParticipant)
+                .WithMany(c => c.Answers)
+                .IsRequired()
+                .OnDelete(DeleteBehavior.Restrict);
 
             // modelBuilder.Entity<Question>()
                 //.HasMany(o1 => o1.Choices)

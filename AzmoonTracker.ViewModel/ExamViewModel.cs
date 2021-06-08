@@ -9,7 +9,11 @@ namespace AzmoonTracker.ViewModels
     {
         [Required]
         [MaxLength(30)]
-        public String ExamId { get; set; }
+        public String ExamId { get; set; }//TODO: comment out
+
+        [Required]
+        [MaxLength(40)]
+        public String ExamSearchId { get; set; }
 
         [Required]
         [MaxLength(70)]

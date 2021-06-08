@@ -17,6 +17,15 @@ namespace AzmoonTracker.Models
         [ForeignKey("ExamFK")]
         public virtual Exam Exam { get; set; }
         [Required]
-        public int ExamFK { get; set; }
+        public string ExamFK { get; set; }
+
+        //student grade
+        public int Grade { get; set; }
+
+        //primary key id
+        [Required]
+        public int ExamParticipantId { get; set; }
+
+        public virtual ICollection<Answer> Answers { get; set; }
     }
 }

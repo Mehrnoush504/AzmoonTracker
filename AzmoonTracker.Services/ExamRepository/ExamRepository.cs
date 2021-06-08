@@ -25,6 +25,7 @@ namespace AzmoonTracker.Services.ExamRepository
                 examViews.Add(new ExamViewModel
                 {
                     ExamId = exam.ExamId,
+                    ExamSearchId = exam.ExamSearchId,
                     ExamName = exam.ExamName,
                     ClassName = exam.ClassName,
                     StartTime = exam.StartTime,
@@ -69,6 +70,7 @@ namespace AzmoonTracker.Services.ExamRepository
             ExamViewModel examView = new ExamViewModel
             {
                 ExamId = exam.ExamId,
+                ExamSearchId = exam.ExamSearchId,
                 ExamName = exam.ExamName,
                 ClassName = exam.ClassName,
                 QuestionNum = exam.QuestionNum,
@@ -118,7 +120,8 @@ namespace AzmoonTracker.Services.ExamRepository
                 CreatorId = creatorId,
                 //Creator = GetHashCode from token?
                 ClassName = examView.ClassName,
-                ExamId = examView.ExamId,
+                ExamId = examView.ExamId, //is this needed?
+                ExamSearchId = examView.ExamSearchId,
                 ExamName = examView.ExamName,
                 StartTime = examView.StartTime,
                 EndTime = examView.EndTime,
@@ -135,11 +138,10 @@ namespace AzmoonTracker.Services.ExamRepository
             return true;//check
         }
 
-        public bool UpdateExam(ExamViewModel examView, string prevExamId)
+        public bool UpdateExam(ExamViewModel examView, string ExamId)
         {
 
-
-            this.DeleteExam(prevExamId);
+            this.DeleteExam(ExamId);
             ctx.SaveChanges();
             this.CreateExam(examView,"q");
             //the reason I wrote it like this is that
